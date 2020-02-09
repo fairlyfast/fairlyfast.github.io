@@ -809,7 +809,7 @@
             "slides": [
               {
                 "image": "@THEME_PATH@/components/_images/carousel/1.jpg",
-                "active": false,
+                "active": true,
                 "showButtons": true,
                 "showText": true,
                 "showTitle": true,
@@ -822,11 +822,11 @@
                 "overlay": true,
                 "contentAlign": "center",
                 "text": "Please view our featured sites catered just for you<br>CLICK BELOW TO ACCESS gifts, health and wellness products for you or a loved one",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-success display-4\" data-app-placeholder=\"Type Text\" href=\"https://www.amazon.com/Dont-Push-Your-Luck-Snowden/dp/1727263243/\" data-toolbar=\"-mbrBtnMove\">READ ME</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline display-4\" data-app-placeholder=\"Type Text\" href=\"https://immunotec.com/fairlyfast\" data-toolbar=\"-mbrBtnMove\">TAKE ME</a>"
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-success display-4\" data-app-placeholder=\"Type Text\" href=\"https://www.amazon.com/Dont-Push-Your-Luck-Snowden/dp/1727263243/\" data-toolbar=\"-mbrBtnMove\">READ ME</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline display-4\" data-app-placeholder=\"Type Text\" href=\"http://morinda.com/fairlyfast\" data-toolbar=\"-mbrBtnMove\">TAKE ME</a>"
               },
               {
                 "image": "@THEME_PATH@/components/_images/carousel/2.jpg",
-                "active": true,
+                "active": false,
                 "showButtons": false,
                 "showText": true,
                 "showTitle": true,
