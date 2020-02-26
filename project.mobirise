@@ -32,7 +32,7 @@
     "path": "@PROJECT_PATH@",
     "siteFonts": [],
     "versionFirst": "4.7.6",
-    "uniqCompNum": 23,
+    "uniqCompNum": 32,
     "versionPublish": "4.10.15",
     "screenshot": "screenshot.png"
   },
@@ -948,51 +948,72 @@
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            "& when not (@reverseContent)": {
-              "@media (min-width: 992px)": {
-                ".mbr-figure": {
-                  "padding-right": "4rem"
-                }
-              },
-              "@media (max-width: 991px)": {
-                ".mbr-figure": {
-                  "padding-bottom": "1rem"
-                }
-              }
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
             },
-            "& when (@reverseContent)": {
-              ".media-container-row": {
-                "flex-direction": "row-reverse",
-                "-webkit-flex-direction": "row-reverse"
-              },
-              "@media (min-width: 992px)": {
-                ".mbr-figure": {
-                  "padding-left": "4rem"
-                }
-              },
-              "@media (max-width: 991px)": {
-                ".media-container-row": {
-                  "flex-wrap": "wrap-reverse",
-                  "-webkit-flex-wrap": "wrap-reverse"
-                },
-                ".mbr-figure": {
-                  "padding-top": "1rem"
-                }
-              }
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
             },
-            ".mbr-text": {
-              "color": "#7f1933"
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-box": {
+              "padding-top": "2rem"
+            },
+            ".card-wrapper": {
+              "height": "100%"
             }
           },
-          "_name": "content6",
-          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\">  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <img src=\"@PROJECT_PATH@/assets/images/background1.jpeg\" alt=\"Mobirise\" title>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><h1>\n<br><b>TRY THESE HEALTHY &nbsp; &nbsp; &nbsp; &nbsp; BEVERAGES!</b><br></h1><br><h1>Coming Soon Marley Teas with CBD!!!&nbsp;</h1>\n<br>\t\t\t\n<br>\t\t\n<br>\t\t\t\t\t<div class=\"row\">\n<br>\t\t\t\t\t\t\t\t\t<div class=\"col-md-6 link_brand_page\" id=\"newage\">\n<br>\t<div class=\"box\" style=\"background-color: #2b2b2b;\">\n<br>\t\t<div class=\"link_container\">\n<br>\t\t\t<a class=\"affiliate_link\" target=\"_blank\" style=\"color: #ffffff;\" href=\"https://newagebev.com/FairlyFast/en-us\">newagebev.com/FairlyFast/en-us</a>\n<br>\t\t</div>\n<br>\t\t<div class=\"image_container\">\n<br>\t\t\t<img class=\"affiliate_image\" src=\"/Modules/affiliates/images/links/newage_logo.png\">\n<br>\t\t</div>\n<br>\t</div>\n<br></div>\n<br>\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-6 link_brand_page\" id=\"bucha\">\n<br>\t<div class=\"box\" style=\"background-color: #536359;\">\n<br>\t\t<div class=\"link_container\">\n<br>\t\t\t<a class=\"affiliate_link\" target=\"_blank\" style=\"color: #93b9aa;\" href=\"https://newagebev.com/FairlyFast/en-us/bucha\">newagebev.com/FairlyFast/en-us/bucha</a>\n<br>\t\t</div>\n<br>\t\t<div class=\"image_container\">\n<br>\t\t\t<img class=\"affiliate_image\" src=\"/Modules/affiliates/images/links/bucha_logo.png\">\n<br>\t\t</div>\n<br>\t</div>\n<br></div>\n<br>\t\t\t\t\t\t\t\t\t\t</div>\n<br>\t\t\t\t\t<div class=\"row\">\n<br>\t\t\t\t\t\t\t\t\t<div class=\"col-md-6 link_brand_page\" id=\"coco-libre\">\n<br>\t<div class=\"box\" style=\"background-color: #5fb548;\">\n<br>\t\t<div class=\"link_container\">\n<br>\t\t\t<a class=\"affiliate_link\" target=\"_blank\" style=\"color: #ffffff;\" href=\"https://newagebev.com/FairlyFast/en-us/coco-libre\">newagebev.com/FairlyFast/en-us/coco-libre</a>\n<br>\t\t</div>\n<br>\t\t<div class=\"image_container\">\n<br>\t\t\t<img class=\"affiliate_image\" src=\"/Modules/affiliates/images/links/coco-libre_logo.png\">\n<br>\t\t</div>\n<br>\t</div>\n<br></div>\n<br>\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-6 link_brand_page\" id=\"marley\">\n<br>\t<div class=\"box\" style=\"background-color: #232323;\">\n<br>\t\t<div class=\"link_container\">\n<br>\t\t\t<a class=\"affiliate_link\" target=\"_blank\" style=\"color: #f7bd2d;\" href=\"https://newagebev.com/FairlyFast/en-us/marley\">newagebev.com/FairlyFast/en-us/marley</a>\n<br>\t\t</div>\n<br>\t\t<div class=\"image_container\">\n<br>\t\t\t<img class=\"affiliate_image\" src=\"/Modules/affiliates/images/links/marley_logo.png\">\n<br>\t\t</div>\n<br>\t</div>\n<br></div>\n<br>\t\t\t\t\t\t\t\t\t\t</div>\n<br>\t\t\t\t\t<div class=\"row\">\n<br>\t\t\t\t\t\t\t\t\t<div class=\"col-md-6 link_brand_page\" id=\"xing\">\n<br>\t<div class=\"box\" style=\"background-color: #fcda06;\">\n<br>\t\t<div class=\"link_container\">\n<br>\t\t\t<a class=\"affiliate_link\" target=\"_blank\" style=\"color: #2b2b2b;\" href=\"https://newagebev.com/FairlyFast/en-us/xing\">newagebev.com/FairlyFast/en-us/xing</a>\n<br>\t\t</div>\n<br>\t\t<div class=\"image_container\">\n<br>\t\t\t<img class=\"affiliate_image\" src=\"/Modules/affiliates/images/links/xing_logo.png\">\n<br>\t\t</div>\n<br>\t</div>\n<br></div>\n<br>\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-6 link_brand_page\" id=\"waterislife\">\n<br>\t<div class=\"box\" style=\"background-color: #00b4e5;\">\n<br>\t\t<div class=\"link_container\">\n<br>\t\t\t<a class=\"affiliate_link\" target=\"_blank\" style=\"color: #ffffff;\" href=\"https://newagebev.com/FairlyFast/en-us/waterislife\">newagebev.com/FairlyFast/en-us/waterislife</a>\n<br>\t\t</div>\n<br>\t\t<div class=\"image_container\">\n<br>\t\t\t<img class=\"affiliate_image\" src=\"/Modules/affiliates/images/links/waterislife_logo.png\">\n<br>\t\t</div>\n<br>\t</div>\n<br></div>\n<br>\t\t\t\t\t\t\t\t\t\t</div>\n<br>\t\t\t\n<br>\t\t\t\n<br>\t\t\n<br>\t\n<br>\n<br>\n<br>\t\t\t\n<br>\t\t\n<br>\n<br>\t\t\t\t\t<footer class=\"footer\"></footer></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rRBaKc3859",
+          "_name": "features2",
+          "_customHTML": "<section class=\"features2\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"https://newagebev.com/FairlyFast/en-us\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/newage-logo-420x261.png\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"https://newagebev.com/FairlyFast/en-us\" target=\"_blank\">\n                            https://newagebev.com/FairlyFast/en-us\n                        </a></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"https://newagebev.com/FairlyFast/en-us/bucha\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/bucha-logo-420x261.png\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box \">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"https://newagebev.com/FairlyFast/en-us/bucha\" target=\"_blank\">\n                            https://newagebev.com/FairlyFast/en-us/bucha\n                        </a></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"https://newagebev.com/FairlyFast/en-us/coco-libre\"><img src=\"@PROJECT_PATH@/assets/images/coco-libre-logo-1-420x261.png\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><p><a href=\"https://newagebev.com/FairlyFast/en-us/coco-libre\" target=\"_blank\">\n                            https://newagebev.com/FairlyFast/en-us/coco-libre\n                        </a></p></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/background4.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app. <a href=\"https://mobirise.co\">Learn more...</a>\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rRBlXqodMk",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "content6-m"
+          "_anchor": "features2-u"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-box": {
+              "padding-top": "2rem"
+            },
+            ".card-wrapper": {
+              "height": "100%"
+            }
+          },
+          "_name": "features2",
+          "_customHTML": "<section class=\"features2\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"https://newagebev.com/FairlyFast/en-us/marley\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/marley-logo-420x261.png\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"https://newagebev.com/FairlyFast/en-us/marley\" target=\"_blank\">https://newagebev.com/FairlyFast/en-us/marley</a>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"https://newagebev.com/FairlyFast/en-us/xing\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/xing-logo-1-420x261.png\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box \">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"https://newagebev.com/FairlyFast/en-us/xing\" target=\"_blank\">\n                            https://newagebev.com/FairlyFast/en-us/xing\n                        </a></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"https://newagebev.com/FairlyFast/en-us/waterislife\"><img src=\"@PROJECT_PATH@/assets/images/waterislife-logo-1-420x261.png\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><p>\n                            https://newagebev.com/FairlyFast/en-us/waterislife<a href=\"https://newagebev.com/FairlyFast/en-us/waterislife\" target=\"_blank\"></a>\n                        </p></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/background4.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app. <a href=\"https://mobirise.co\">Learn more...</a>\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rRBKZK5vAx",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features2-v"
         }
       ]
     },
