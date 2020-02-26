@@ -921,7 +921,7 @@
                 "overlay": true,
                 "contentAlign": "left",
                 "text": "Click links below for a small sampling of our videos",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary display-4\" data-app-placeholder=\"Type Text\" href=\"https://youtu.be/bgf3or1r8lo\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Animation</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline display-4\" data-app-placeholder=\"Type Text\" href=\"https://yout.ube/MQHJW3ckz1k\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Trailer</a>"
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary display-4\" data-app-placeholder=\"Type Text\" href=\"https://youtu.be/bgf3or1r8lo\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Animation</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline display-4\" data-app-placeholder=\"Type Text\" href=\"https://www.youtube.com/watch?v=MQHJW3ckz1k\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Trailer</a>"
               },
               {
                 "image": "@THEME_PATH@/components/_images/background3.jpg",
